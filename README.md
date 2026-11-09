@@ -151,7 +151,7 @@ Resolve the documented control defects and use a velocity arbiter, controller-si
 
 ## Upload to GitHub
 
-Create a new **empty** repository named `humac-autonomous-harvesting-robot` under your GitHub account. Start with Private. Do not initialize another README, `.gitignore` or license on GitHub.
+Create a new **empty** repository named `humac-autonomous-harvesting-robot` under your GitHub account. Choose Public to make the project visible on your profile. Do not initialize another README, `.gitignore` or license on GitHub.
 
 Open a terminal in this folder and run:
 

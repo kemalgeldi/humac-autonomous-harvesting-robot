@@ -1,0 +1,46 @@
+# Operating system and editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Catkin workspaces and runtime data
+build/
+devel/
+install/
+logs/
+*.log
+*.bag
+*.bag.active
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+
+# Local credentials and configuration
+.env
+.env.*
+!.env.example
+
+# Private models, generated exports and datasets
+*.pt
+*.pth
+*.onnx
+*.engine
+weights/
+model_weights/
+runs/
+datasets/
+
+# Keep original phone photos outside the publication tree; use metadata-free JPG exports.
+*.heic
+*.HEIC

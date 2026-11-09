@@ -1,0 +1,6 @@
+# Reference Python dependencies, not a tested or pinned Jetson environment.
+# Use ROS-provided NumPy/OpenCV where required by cv_bridge and the robot's image.
+# Choose Ultralytics/PyTorch versions compatible with the actual Jetson/CUDA stack.
+numpy
+opencv-python
+ultralytics

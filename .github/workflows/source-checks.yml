@@ -1,0 +1,28 @@
+name: Source checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.13'
+      - name: Check Python syntax without importing ROS or loading a model
+        run: python -m compileall -q visual_servo/scripts experiments
+      - name: Check package metadata and local documentation links
+        shell: python
+        run: |
+          from pathlib import Path
+          import re
+          import xml.etree.ElementTree as ET
+          ET.parse('visual_servo/package.xml')
+          for document in [Path('README.md'), Path('README.ru.md'), *Path('docs').glob('*.md')]:
+              for target in re.findall(r'!?\[[^\]]*\]\(([^)]+)\)', document.read_text()):
+                  if '://' in target or target.startswith('#'):
+                      continue
+                  path = target.split('#', 1)[0]
+                  assert (document.parent / path).exists(), (document, target)
+          print('XML and documentation links OK')

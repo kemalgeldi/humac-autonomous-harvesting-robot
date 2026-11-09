@@ -1,0 +1,22 @@
+[
+  {
+    "original": "visual_servo/scripts/unified_script 2.0.py",
+    "repository": "visual_servo/scripts/unified_mapper.py",
+    "sha256": "da40b407a257f551bcd19b4b7cbf9e75390aedb9ceed049e11692d8f5b0735f9"
+  },
+  {
+    "original": "visual_servo/scripts/tree_navig.py",
+    "repository": "experiments/tree_navig.py",
+    "sha256": "8f0f9ce0124430e30b6433741112a16289780fc6ee2f430615703094631d8ea6"
+  },
+  {
+    "original": "unified_script.py",
+    "repository": "experiments/unified_script.py",
+    "sha256": "a7901e70ba7589afb1a223d94044833efaa9c05e4e2ffd221fb9e5aa9cb4007b"
+  },
+  {
+    "original": "testing_nav_v2.py",
+    "repository": "experiments/testing_nav_v2.py",
+    "sha256": "29602ca2cd3bc981e931c6b77340672c48edc36a16cd1cb7b996c35aecf30112"
+  }
+]

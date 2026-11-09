@@ -1,0 +1,16 @@
+[
+  {
+    "file": "media/videos/robot-navigation.mp4",
+    "duration_seconds": 74.63,
+    "size_bytes": 10878046,
+    "codec": "H.264",
+    "audio": false
+  },
+  {
+    "file": "media/videos/dashboard-perception.mp4",
+    "duration_seconds": 63.04,
+    "size_bytes": 9158659,
+    "codec": "H.264",
+    "audio": false
+  }
+]
